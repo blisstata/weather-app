@@ -1,0 +1,64 @@
+body {
+    background-color: beige;
+    margin-top: 1rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main form {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5 0.5;
+}
+
+.main button {
+    height: 3rem;
+    min-width: 7rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.weather__heading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: darkorange;
+    font-weight: 700;
+}
+
+.weather__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weather__main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 0 3rem;
+}
+
+.weather-details__flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.weather__error {
+    color: red;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main, .main form, .weather__main {
+        flex-direction: column;
+    }
+
+    .weather-details__flex {
+        flex-direction: column;
+        align-items: inherit;
+    }
+}
